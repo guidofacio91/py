@@ -1,5 +1,6 @@
 import datetime
 import json
+from Person import Person #ESTO ES PARA IMPORTAR UNA CLASE SOLA DE UN MODULO()
 
 print("-------------------------")
 x = datetime.datetime.now()
@@ -82,3 +83,10 @@ with open('jeison1.json') as file:
 
       lambdaresult = lambda a : a * 100 / total
       print(lambdaresult(menosde30))
+
+      print("---------------------------------")
+      print("imprimir objeto person")
+
+      p1 = Person("John", 36)
+
+      print("NAME: ",p1.name," AGE:",p1.age)
