@@ -75,3 +75,10 @@ with open('jeison1.json') as file:
       print('')
       print("menos de 30:",menosde30," mas de 30:",masde30)
 
+      total=masde30+menosde30
+
+      print("-------------------------------------")
+      print("lambda para saber que porcentaje tiene menos de 30:")
+
+      lambdaresult = lambda a : a * 100 / total
+      print(lambdaresult(menosde30))
